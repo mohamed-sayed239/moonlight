@@ -73,6 +73,7 @@ header{
   justify-content: center;
   display: flex;
   gap: 30px;
+  flex-grow: 1;
 }
 .mainhead a{
   color: black;
@@ -84,6 +85,11 @@ header{
   font-size: 18px;
   border-bottom: 1px solid #e440bb;
  transition-delay: 1.5s;
+}
+.logo {
+  width: 127px;
+  display: flex;
+  justify-content: center;
 }
 .logo img{
   width: 80px;
