@@ -18,13 +18,15 @@ const translations = {
     homeSubtitle: "Crafting comfort and elegance for the modern woman",
     learnMore: "Learn more",
     aboutTitle: "About Moon Light",
-    aboutText1: "Moon Light is a luxury women's homewear manufacturing factory committed to producing elegant, feminine, and comfortable loungewear for refined living.",
-    aboutText2: "Founded with a passion for graceful living, Moon Light began as a vision to elevate homewear into an art form. Today, our factory blends traditional craftsmanship with advanced manufacturing techniques to deliver high-quality loungewear made for women who value beauty and comfort at home.",
+    aboutText1: "Moon Light is a premium women's homewear manufacturing brand dedicated to designing elegant, feminine, and comfortable loungewear for modern living. Our passion lies in making every woman feel at ease and effortlessly stylish in her own space.",
+    aboutText2: "Established with a vision to transform homewear into an expression of beauty and comfort, our factory merges traditional craftsmanship with advanced manufacturing technologies to ensure outstanding quality in every piece we produce.",
+    aboutText3: "Why choose Moon Light? Because we believe that comfort should never compromise style. Every collection we craft is made with care, precision, and purpose — tailored to women who value grace and authenticity.",
+    aboutText4: "At Moon Light, we don't just manufacture homewear — we craft the feeling of home itself.",
+    aboutListItem1: "Elegance in every detail",
     aboutListItem1: "Elegance in every detail",
     aboutListItem2: "High-precision production",
     aboutListItem3: "Soft, skin-friendly fabrics",
     aboutListItem4: "Ethical and sustainable practices",
-    aboutText3: "At Moon Light, we don't just manufacture homewear — we craft the feeling of home itself.",
     manufacturingTitle: "Manufacturing Process",
     manufacturingSubtitle: "From request to delivery in simple steps",
     finishing: "Finishing",
@@ -79,8 +81,10 @@ const translations = {
     homeSubtitle: "صنع الراحة والأناقة للمرأة العصرية",
     learnMore: "اعرف المزيد",
     aboutTitle: "عن مون لايت",
-    aboutText1: "مون لايت هي مصنع لتصنيع الملابس المنزلية النسائية الفاخرة الملتزمة بإنتاج ملابس أنيقة وأنثوية ومريحة للعيش الراقي.",
-    aboutText2: "تأسست بشغف للعيش الرشيق، بدأت مون لايت كرؤية لرفع مستوى الملابس المنزلية إلى شكل فني. اليوم، يدمج مصنعنا الحرفية التقليدية مع تقنيات التصنيع المتقدمة لتقديم ملابس منزلية عالية الجودة مصنوعة للنساء اللاتي يقدرن الجمال والراحة في المنزل.",
+    aboutText1: "مون لايت هي علامة متخصصة في تصنيع الملابس المنزلية النسائية الفاخرة، تلتزم بتصميم ملابس أنيقة، أنثوية، ومريحة تناسب أسلوب الحياة العصري. شغفنا هو أن نجعل كل امرأة تشعر بالراحة والأناقة في منزلها",
+    aboutText2: "تأسست مون لايت برؤية تهدف إلى تحويل الملابس المنزلية إلى تجربة تجمع بين الجمال والراحة. يجمع مصنعنا بين الحرفية التقليدية وأحدث تقنيات التصنيع لنقدم منتجات عالية الجودة في كل قطعة نصنعها",
+    aboutText3: "لماذا تختارين مون لايت؟ لأننا نؤمن أن الراحة لا يجب أن تكون على حساب الأناقة. كل مجموعة نقدمها مصممة بعناية ودقة لتناسب المرأة التي تقدر الرقي والتميز في تفاصيل حياتها اليومية",
+    aboutText4: "في مون لايت، نحن لا نصنع فقط الملابس المنزلية — بل نصنع شعور المنزل نفسه",
     aboutListItem1: "الأناقة في كل التفاصيل",
     aboutListItem2: "إنتاج عالي الدقة",
     aboutListItem3: "أقمشة ناعمة وصديقة للبشرة",
@@ -110,8 +114,8 @@ const translations = {
     webDesignDesc: "خدمات تصميم المواقع للمصانع والمتاجر",
     intShipping: "الشحن الدولي",
     intShippingDesc: "أسعار شحن دولي تنافسية",
-    training: "التدريب",
-    trainingDesc: "قص، صنع الأنماط، والخياطة",
+    training: "كورسات تعليميه",
+    trainingDesc: "قص، الباترون, والخياطة",
     customTailoring: "تفصيل حسب الطلب",
     customTailoringDesc: "تصميم نماذج مخصصة حسب الطلب",
     locationTitle: "الموقع",
@@ -234,3 +238,24 @@ boxes.forEach(box => {
   bar.onclick = ()=>{
     mainhead.classList.toggle('open')
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyVideos = document.querySelectorAll("video.lazy-video");
+
+  const videoObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        const src = video.getAttribute("data-src");
+        if (src) {
+          video.src = src;
+          video.load(); // يبدأ التحميل
+          observer.unobserve(video); // خلاص اتحمل، مش محتاج نراقبه تاني
+        }
+      }
+    });
+  });
+
+  lazyVideos.forEach(video => {
+    videoObserver.observe(video);
+  });
+});
