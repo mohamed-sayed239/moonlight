@@ -50,7 +50,7 @@ homeSubtitle: "Specializing in high-quality homewear and loungewear"
     shippingDesc: "Fast and Secure Shipping within Egypt",
     webDesign: "Website Design",
     webDesignDesc: "Website Design Services for Factories and Stores",
-    intShipping: "International Shipping",
+    intShipping: "Global Shipping",
     intShippingDesc: "Competitive International Shipping Rates",
     training: "Training",
     trainingDesc: "Cutting, Pattern Making, and Sewing",
