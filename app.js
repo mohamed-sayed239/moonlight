@@ -14,8 +14,9 @@ const translations = {
     location: "Location",
     contact: "Contact Us",
     language: "Language ▾",
-    homeTitle: "Moon Light Women's Home Wear",
-    homeSubtitle: "Crafting comfort and elegance for the modern woman",
+homeTitle: "Moon Light Apparel Manufacturing",
+homeSubtitle: "Specializing in high-quality homewear and loungewear"
+,
     learnMore: "Learn more",
     aboutTitle: "About Moon Light",
     aboutText1: "Moon Light is a premium women's homewear manufacturing brand dedicated to designing elegant, feminine, and comfortable loungewear for modern living. Our passion lies in making every woman feel at ease and effortlessly stylish in her own space.",
@@ -77,8 +78,9 @@ const translations = {
     location: "الموقع",
     contact: "اتصل بنا",
     language: "اللغة ▾",
-    homeTitle: "ملابس منزلية نسائية مون لايت",
-    homeSubtitle: "صنع الراحة والأناقة للمرأة العصرية",
+homeTitle: "مصنع مون لايت لصناعة الملابس",
+homeSubtitle: "متخصصون في ملابس المنزل والراحة عالية الجودة"
+,
     learnMore: "اعرف المزيد",
     aboutTitle: "عن مون لايت",
     aboutText1: "مون لايت هي علامة متخصصة في تصنيع الملابس المنزلية النسائية الفاخرة، تلتزم بتصميم ملابس أنيقة، أنثوية، ومريحة تناسب أسلوب الحياة العصري. شغفنا هو أن نجعل كل امرأة تشعر بالراحة والأناقة في منزلها",
