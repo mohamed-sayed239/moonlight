@@ -82,6 +82,9 @@ header{
   gap: 30px;
   flex-grow: 1;
 }
+.remove-container{
+  display: none;
+}
 .mainhead a{
   color: black;
   text-decoration: none;
@@ -767,6 +770,15 @@ header{
     .mainhead.open{
         display: flex;
     }
+        .remove-container{
+      display: flex;
+}
+.remove-container i{
+  color: #000;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 999;
+}
     .bar-lg{
       display: flex;
       align-items: center;
@@ -975,7 +987,6 @@ iframe{
         left: 0;
         width: 70%;
         height: 100vh;
-        display: flex;
         flex-direction: column;
         font-size: 17px;
         font-weight: 600;
@@ -988,6 +999,15 @@ iframe{
     .mainhead.open{
         display: flex;
     }
+    .remove-container{
+      display: flex;
+}
+.remove-container i{
+  color: #000;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 999;
+}
     .bar-lg{
       display: flex;
       align-items: center;
@@ -1256,6 +1276,15 @@ iframe{
     .mainhead.open{
         display: flex;
     }
+        .remove-container{
+      display: flex;
+}
+.remove-container i{
+  color: #000;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 999;
+}
     .bar-lg{
       display: flex;
       align-items: center;

@@ -234,12 +234,17 @@ boxes.forEach(box => {
   });
 
 
-  let bar = document.querySelector('.fa-bars');
-  let mainhead = document.querySelector('.mainhead');
+  const bar = document.querySelector('.fa-bars');
+  const mainhead = document.querySelector('.mainhead');
+  const removeBtn = document.querySelector(".remove-container");
 
-  bar.onclick = ()=>{
-    mainhead.classList.toggle('open')
-}
+bar?.addEventListener('click', () => {
+    mainhead.classList.toggle('open');
+});
+removeBtn?.addEventListener('click', () => {
+    mainhead.classList.remove('open');
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const lazyVideos = document.querySelectorAll("video.lazy-video");
 
