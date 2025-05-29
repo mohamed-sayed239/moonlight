@@ -7,6 +7,9 @@
     outline: none;
     user-select: none;
 }
+img{
+  user-select: none;
+}
 #Manufacturing,#services {
   scroll-margin-top: 100px;
 }
@@ -1820,7 +1823,7 @@ iframe{
   gap: 30px;
 }
 }
-@media (min-width: 1200px) {
+@media (max-width: 1366px) and (min-width: 1200px) {
   .about ,.Manufacturing ,.location ,.contact-us{
     height: 100vh;
     padding: 50px 0;
